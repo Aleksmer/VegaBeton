@@ -1,0 +1,119 @@
+.slider {
+  width: 100%;
+  min-width: 0;
+  height: 700px;
+  background-color: cadetblue;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*стрелки*/
+.swiper-button-prev,
+.swiper-button-next {
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+
+  svg {
+    height: 15px;
+    width: 8px;
+  }
+
+  &::after {
+    content: none;
+  }
+}
+
+.swiper-button-prev {
+  background-color: white;
+  border: $blue-border-thin;
+  transition: .2s;
+
+  &:hover {
+    background-color: $blue;
+    border: none;
+
+    path {
+      fill: white
+    }
+  }
+}
+
+.swiper-button-next {
+  background-color: white;
+  border: $blue-border-thin;
+  transition: .2s;
+
+  path {
+    fill: $blue
+  }
+
+  &:hover {
+    background-color: $blue;
+    border: none;
+
+    path {
+      fill: white
+    }
+  }
+}
+
+/*пагинация*/
+.swiper-pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*буллеты*/
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border: $blue-border-thin;
+  opacity: 1;
+
+  &:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  &-active {
+    width: 10px;
+    height: 10px;
+    background-color: $blue;
+  }
+}
+
+@include phone {
+
+  .swiper-control {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    margin-top: 10px;
+    padding-right: 40px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    margin-top: unset;
+  }
+
+  .swiper-button-prev {
+    margin-right: 10px;
+  }
+
+  .swiper-pagination {
+    position: static;
+    padding-right: 80px;
+    left: unset;
+    transform: unset;
+  }
+}

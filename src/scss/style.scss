@@ -1,0 +1,103 @@
+@import './_libs';
+@import './_vars';
+@import './_mixins.scss';
+@import './_fonts';
+
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Roboto, serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1242px;
+  width: 100%;
+  padding-inline: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: $font-family-roboto;
+}
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 117px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 49px;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+h3 {
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 54px;
+}
+
+h4 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 41px;
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+h7 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include desktop {
+  .container {
+    min-width: 100%;
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+@include phone {
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+// end common styles
+@import './_imports';

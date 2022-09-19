@@ -1,0 +1,66 @@
+.button {
+  width: max-content;
+  height: 46px;
+  width: 190px;
+  border: none;
+  line-height: 22px;
+  padding: 17px;
+  font-family: $font-family-roboto;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &--blue-white {
+    background-color: $blue;
+    color: white;
+    border: none;
+    &:hover {
+      background-color: white;
+      color: $blue;
+      border: $blue-border;
+    }
+  }
+
+  &--color {
+    background-color: white;
+    color: $blue;
+    border: $color-border;
+
+    &:hover {
+      background-color: $blue;
+      color: white;
+      border: none;
+    }
+  }
+
+  &--none-bc-white {
+    background-color: transparent;
+    color: white;
+    border: $white-border;
+    &:hover {
+      background-color: $blue;
+      color: white;
+      border: none;
+    }
+  }
+
+  &--none-bc-blue {
+    background-color: transparent;
+    color: $blue;
+    border: $blue-border;
+    &:hover {
+      background-color: $blue;
+      color: white;
+      border: none;
+    }
+  }
+
+  &--small-height {
+    height: 45px;
+    padding: 12px;
+  }
+
+}

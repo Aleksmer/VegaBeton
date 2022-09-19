@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  height: auto;
+  max-height: 232px;
+  background-color: $white;
+}
+
+.connect {
+  margin-top: 18px;
+  margin-bottom: 16px;
+
+  &__block-phone {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: auto;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__phone-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    font-weight: 400;
+
+    :first-child {
+      color: black;
+      font-size: 14px;
+    }
+
+    :last-child {
+      color: $light-gray;
+      font-size: 13px;
+    }
+
+  }
+
+  &__bottom-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__label {
+    svg {
+      width: 195px;
+      height: 72px;
+    }
+  }
+
+  &__social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+  }
+
+  &__social-net-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    margin-right: 20px;
+  }
+
+  &__social-net {
+    display: flex;
+    flex-direction: row;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .button {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  .button:first-of-type {
+    margin-right: 13px;
+    width: 176px;
+  }
+
+  .button:last-of-type {
+    width: 157px;
+  }
+
+}
+
+.header-menu {
+  width: 100%;
+  height: 57px;
+  background-color: $blue;
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      color: white;
+    }
+  }
+}
+
+@include tablet {
+
+}

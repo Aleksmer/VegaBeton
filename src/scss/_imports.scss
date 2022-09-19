@@ -1,0 +1,18 @@
+// components
+@import './components/header';
+@import './components/footer';
+@import './components/sliders';
+@import './components/ui';
+// ui
+@import './ui/button';
+@import './ui/input';
+@import './ui/checkbox';
+@import './ui/slider-buttons';
+// sections
+@import './sections/products';
+@import './sections/firstscreen';
+
+//mixins
+@import './mixins/card-product';
+@import './mixins/card-firstscreen';
+@import './components/sliders';

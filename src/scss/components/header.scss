@@ -3,6 +3,21 @@
   height: auto;
   max-height: 232px;
   background-color: $white;
+
+  &__burger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
+
+  &__button-mobile {
+    display: none;
+    width: 100%;
+    background-color: $blue;
+    color: white;
+  }
 }
 
 .connect {
@@ -132,5 +147,100 @@
 }
 
 @include tablet {
+  .header {
+    height: auto;
+    max-height: fit-content;
+
+    .container {
+      padding-bottom: 10px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__button-mobile {
+      display: flex;
+    }
+
+    &__burger-menu {
+      display: flex;
+    }
+
+    &__connect {
+      margin-left: 60px;
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+  }
+  .connect {
+
+    &__bottom-line {
+      position: absolute;
+      top: 0;
+      margin-top: 0;
+      align-items: center;
+      display: flex;
+      height: 80px;
+    }
+
+    &__label {
+      margin-left: 10px;
+
+      svg {
+        width: 139px;
+        height: 51px;
+      }
+    }
+
+    &__social-block {
+      width: auto;
+      transform: translateX(-120px);
+
+      button {
+        display: none;
+      }
+    }
+
+    &__social-net svg {
+      width: 45px;
+      height: 45px;
+    }
+
+    &__block-phone {
+      flex-direction: column;
+      margin-top: 60px;
+
+      :not(:last-child) {
+        //margin-bottom: ;
+      }
+    }
+
+    &__phone-text {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      margin-right: 100px;
+      height: 56px;
+
+      :first-child {
+        color: $light-blue;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      :last-child {
+        color: $dark-brown;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@include phone {
 
 }

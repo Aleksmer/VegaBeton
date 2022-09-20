@@ -1,13 +1,15 @@
-// components
-@import './components/header';
-@import './components/footer';
-@import './components/sliders';
-@import './components/ui';
 // ui
 @import './ui/button';
 @import './ui/input';
 @import './ui/checkbox';
 @import './ui/slider-buttons';
+
+// components
+@import './components/header';
+@import './components/footer';
+@import './components/sliders';
+@import './components/burger-menu';
+
 // sections
 @import './sections/products';
 @import './sections/firstscreen';
